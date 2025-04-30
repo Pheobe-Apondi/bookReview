@@ -1,0 +1,284 @@
+body{
+    height: 200vh;
+}
+
+.personalBlogs{
+    position: relative;
+    display: inline-block;
+}
+
+.navBar{
+
+    position: fixed;
+    top: -1%;
+    width: 100vw;
+    z-index: 100;
+
+}
+
+
+.nav{
+    list-style: none;
+    display: flex;
+    
+    gap: 10%;
+    justify-content: center;
+    color: white;
+    background-color: rgb(168, 84, 24);
+    padding: 0.7%;
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a hover{
+        color: grey;
+    }
+}
+
+.groupBlogs{
+     position: absolute;
+    display: none;
+}
+
+.personalBlogs:hover .groupBlogs{
+     display: block;
+}
+
+.groupNav{
+    list-style: none;
+    width: 10vw;
+    background-color: black;
+    border-radius: 1em;
+    padding: 2%;
+}
+
+.hero{
+    /* background:linear-gradient(rgba(17, 16, 16, 0.5), rgba(0, 0, 0, 0.5)),  url(https://img.freepik.com/free-psd/reading-room-old-library-house-generative-ai_587448-1963.jpg?uid=R191993380&ga=GA1.1.360860165.1740996244&semt=ais_hybrid&w=740); */
+    background-color: rgb(202, 171, 149);
+    height: 70vh;
+    color: white;
+    justify-content: center;
+    margin: -1%;
+
+}
+
+.heroContent{
+  width: 40%;
+  position: relative;
+  left: 30%;
+  top: 30%;
+  
+   h1{
+    font-size: 4em;
+    text-align: center;
+   }
+   p{
+    font-size: 2em;
+   }
+
+   button{
+    background-color: blue;
+    color: white;
+    padding: 2%;
+    justify-self: center;
+    border: none;
+    margin-left: 40%;
+   }
+}
+
+.body{
+    display: flex;
+}
+
+.leftSide{
+width: 20vw;
+}
+.rightSide{
+   width: 20vw;
+}
+.bodySection{
+width: 60vw;
+background-color: white;
+position: absolute;
+top: 70%;
+height: 100vh;
+left: 20%;
+overflow-y: scroll;
+padding-top: 4%;
+border-radius: 2%;
+
+box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+}
+.BooKReviewCatalogue{
+    display: flex;
+    gap: 4%;
+    justify-self: center;
+     padding-top: 3%;
+     box-shadow: inset 4px 4px 10px  #ccc, inset -4px -4px 10px #fff;
+    width: 32vw;
+    padding: 2%;
+
+}
+#becomingBook{
+    width: 10vw;
+}
+#becomingBook:hover, #homegoingBook:hover,#bornACrimeBook:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0.2);
+    z-index: 1;
+}
+
+.upcomingReviews{
+    display: inline-block;
+}
+
+#homegoing{
+    display: block;
+    transition: all 0.3s ease;
+
+}
+.overlay-text{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.upcomingReviews:hover #homegoingBook{
+    transform: translate(-5px);
+    z-index: 1;
+}
+.upcomingReviews:hover .overlay-text{
+    opacity: 1;
+}
+.bookCatalogue{
+    display: flex;
+    gap: 10%;
+    h1{
+        font-size: 2em;
+        text-align: center;
+        padding: 1%;
+        padding-top: 45%;
+        
+    }
+}
+
+.bookTitle{
+    
+    color: white;
+    background-color: black;
+   
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right,orange,purple,blue,purple);
+    border-image-slice: 1;
+     margin-left: 3%;
+     height: 35vh;
+     width: 10vw;
+
+}
+
+
+.eventsTitle{
+    background-color: black;
+     color: white;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right,orange,purple,blue,purple);
+    border-image-slice: 1;
+     height: 35vh;
+     width: 10vw;
+     margin-left: 3%;
+}
+.eventCatalogue{
+    display: flex;
+    gap: 10%;
+    position: relative;
+    top: 5%;
+    h1{
+        font-size: 2em;
+        text-align: center;
+        padding: 2%;
+        padding-top: 45%;
+        
+    }
+}
+
+.events{
+    display: flex;
+    gap: 4%;
+   justify-self: center;
+    box-shadow: inset 4px 4px 10px  #ccc, inset -4px -4px 10px #fff;
+   padding: 2%;
+   width: 32vw;
+}
+
+
+.form{
+    border-radius: 0.7em;
+justify-self: center;
+margin-top: 15%;
+margin-left: 20%;
+padding: 2%;
+width: 30vw;
+color: white;
+background-color: rgb(54, 52, 52);
+font-size: 1.3em;
+margin-bottom: 10%;
+}
+
+#input{
+    padding: 2%;
+    border-radius: 2%;
+    border: none;
+}
+
+.footer{
+    position: absolute;
+    top: 185vh;
+    width: 70vw;
+    justify-self: center;
+    left: 18%;
+    font-size: 1.5em;
+    padding-top: 3%;
+    color: grey;
+
+    p{
+        text-align: center;
+    }
+}
+
+.footerSections{
+    display: flex;
+    gap: 20%;
+}
+
+.footerNavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav{
+    list-style: none;
+    display: flex;
+    gap: 25%;
+    margin-top: -3%;
+
+  li  a{
+        text-decoration: none;
+        color: grey;
+    }
+
+ li a:hover{
+    color: black;
+ }
+}
+
+
+
