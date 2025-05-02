@@ -49,9 +49,12 @@ body{
 .groupNav{
     list-style: none;
     width: 10vw;
-    background-color: black;
+    background-color: white;
     border-radius: 1em;
-    padding: 2%;
+    padding: 5%;
+    line-height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+
 }
 
 .hero{
@@ -70,10 +73,15 @@ body{
   gap: 15%;
   position: relative;
   left: 10%;
-  top: 23%;
+  top: 30%;
   
   
      
+}
+
+#heroMaintext{
+text-align: center;
+font-size: 0.7em;
 }
 
 .trevorBook{
@@ -104,9 +112,47 @@ body{
     display: flex;
 }
 
+#sectionAuthor{
+    font-style: italic;
+}
+#publishDate{
+    text-align: center;
+}
+
 .leftSide{
 width: 15vw;
+
 }
+
+
+
+.bodyNav{
+    position: relative;
+    top: 70vh;
+    width: 20vw;
+    padding: 2%;
+    line-height: 40px;
+    background-color: wheat;
+    h2{
+        text-align: center;
+    }
+    li{
+        list-style: none;
+    }
+
+
+    a{
+     text-decoration: none;
+     color: black;
+    } 
+
+    a:hover{
+        color: maroon;
+        transform: translate(1.02);
+    }
+ }
+
+
 .rightSide{
    width: 15vw;
 }
@@ -114,13 +160,13 @@ width: 15vw;
 width: 70vw;
 background-color: white;
 position: absolute;
-top: 65%;
+top: 70%;
 height: 200vh;
-left: 12%;
+left: 22%;
 padding: 4%;
 line-break: 2%;
-border-radius: 2%;
 overflow-y: scroll;
+line-height: 50px;
 
 box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
 
@@ -140,6 +186,7 @@ h4{
 
 }
 }
+
 
 .contentBlog{
     display: flex;
@@ -404,5 +451,5 @@ width: 15vw;
 
 
 @media only screen and (max-width:800px) and (min-width:501px){
-    
+
 }

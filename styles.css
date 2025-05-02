@@ -69,10 +69,10 @@ body{
 }
 
 .heroContent{
-  width: 40%;
+  width: 38%;
   position: relative;
   left: 35%;
-  top: 30%;
+  top: 40%;
   
    h1{
     font-size: 4em;
@@ -80,17 +80,11 @@ body{
    }
    p{
     font-size: 2em;
+    font-style:italic ;
+
    }
 
-   button{
-    background-color: wheat;
-    color: black;
-    padding: 2.5%;
-    justify-self: center;
-    border: none;
-    margin-left: 40%;
-    border-radius: 1em;
-   }
+  
 }
 
 .body{
@@ -104,10 +98,10 @@ width: 20vw;
    width: 20vw;
 }
 .bodySection{
-width: 60vw;
+width: 65vw;
 background-color: aliceblue;
 position: absolute;
-top: 60%;
+top: 50%;
 height: 130vh;
 left: 20%;
 padding-top: 4%;
@@ -150,10 +144,10 @@ box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.1
 .overlay-text{
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 20%;
-    left: 77%;
+    top: 30%;
+    left: 67%;
     color: white;
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: bold;
     background: rgba(0,0,0,0.6);
     opacity: 0;
@@ -169,14 +163,18 @@ box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.1
 .upcomingReviews:hover .overlay-text{
     opacity: 1;
 }
+
+
+
+
+
+
 .bookCatalogue{
-    display: flex;
-    gap: 10%;
+   
     h1{
         font-size: 2em;
         text-align: center;
         padding: 1%;
-        padding-top: 45%;
         
     }
 }
@@ -189,32 +187,20 @@ box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.1
   
     border-image-slice: 1;
      margin-left: 3%;
-     margin-top: 5%;
      height: 25vh;
      width: 10vw;
 
 }
 
 
-.eventsTitle{
-    color: black;
-    background-color: wheat;
-    border: 3px solid transparent;
-    
-     height: 35vh;
-     width: 10vw;
-     margin-left: 3%;
-}
+
 .eventCatalogue{
-    display: flex;
-    gap: 10%;
+   
     position: relative;
-    top: 5%;
     h1{
         font-size: 2em;
         text-align: center;
-        padding: 2%;
-        padding-top: 45%;
+        padding: 1%;
         
     }
 }
@@ -232,8 +218,8 @@ box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.1
 .form{
     border-radius: 0.7em;
 justify-self: center;
-margin-top: 15%;
-margin-left: 20%;
+margin-top: 1%;
+margin-left: 2%;
 padding: 2%;
 width: 30vw;
 color: white;
@@ -278,7 +264,9 @@ margin-bottom: 10%;
     list-style: none;
     display: flex;
     gap: 25%;
-    margin-top: -3%;
+    margin-top: 1%;
+    position: relative;
+    left: 68%;
 
   li  a{
         text-decoration: none;
@@ -290,5 +278,700 @@ margin-bottom: 10%;
  }
 }
 
+@media only screen and (max-width:500px) and (min-width:0px){
 
+
+
+    
+.navBar{
+
+    position: fixed;
+    top: 0%;
+    width: 110vw;
+    z-index: 100;
+
+}
+
+
+.nav{
+     margin-top: 0;
+    gap: 5%;
+    justify-content: center;
+    padding: 0.7%;
+    margin-left: 0%;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 0.9em;
+
+    }
+    a hover{
+        color: grey;
+    }
+}
+
+.groupBlogs{
+     position: absolute;
+    display: none;
+}
+
+.personalBlogs:hover .groupBlogs{
+     display: block;
+}
+
+.groupNav{
+    list-style: none;
+    width: 10vw;
+    background-color: white;
+    border-radius: 1em;
+    padding: 5%;
+
+}
+
+
+.hero{
+    /* background:linear-gradient(rgba(17, 16, 16, 0.5), rgba(0, 0, 0, 0.5)),  url(https://img.freepik.com/free-psd/reading-room-old-library-house-generative-ai_587448-1963.jpg?uid=R191993380&ga=GA1.1.360860165.1740996244&semt=ais_hybrid&w=740); */
+    background-color: maroon;
+    height: 30vh;
+    color: white;
+    justify-content: center;
+    margin: -5%;
+
+}
+
+.heroContent{
+  width: 90%;
+  position: relative;
+  left: 5%;
+  top:40%;
+ 
+   p{
+    font-size: 1em;
+    font-style:italic ;
+
+   }
+
+  
+}
+
+
+.bodySection{
+    width: 90vw;
+    background-color: aliceblue;
+    position: absolute;
+    top: 30%;
+    height: 160vh;
+    left: 0%;
+    padding-top: 4%;
+    box-shadow: none;
+
+    
+    }
+    .BooKReviewCatalogue{
+        flex-direction: column;
+        width: 60vw;
+        padding: 10%;
+       
+    
+    }
+    #becomingBook{
+        width: 45vw;
+    }
+    #becomingBook:hover, #homegoingBook:hover,#bornACrimeBook:hover{
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0,0,0.2);
+        z-index: 1;
+        margin-top: 3%;
+
+    }
+    
+  
+    .overlay-text{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 130vh;
+        left: 43%;
+        color: white;
+        font-size: 1.6em;
+        font-weight: bold;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 4;
+    }
+    
+    .upcomingReviews:hover #homegoingBook{
+        transform: translate(-5px);
+        z-index: 1;
+    }
+    .upcomingReviews:hover .overlay-text{
+        opacity: 1;
+    }
+    
+    
+    
+    
+    
+    
+    .bookCatalogue{
+        margin-top: 35%;
+       
+        h1{
+            font-size: 1.5em;
+            text-align: center;
+            padding: 1%;
+            
+        }
+    }
+  
+    
+    
+    
+    .eventCatalogue{
+       
+        position: relative;
+        h1{
+            font-size: 1em;
+            text-align: center;
+            padding: 2%;
+            
+        }
+    }
+    
+    .events{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+       width: 60vw;
+    }
+
+
+
+
+.form{
+
+width: 70vw;
+
+font-size: 1em;
+margin-bottom: 10%;
+}
+
+
+.footerSections{
+    display: flex;
+    gap: 0%;
+    position: relative;
+    top: 170vh;
+}
+
+.footerNavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav{
+    
+    position: relative;
+    left: 0%;
+
+  li  a{
+      
+        font-size: 0.7em;
+    }
+
+
+}
+
+#footerCopyright{
+    position: relative;
+    top: 170vh;
+    font-size: 0.7em;
+}
+    
+}
+
+@media only screen and (max-width:800px) and (min-width:501px){
+
+    .navBar{
+
+        position: fixed;
+        top: 0%;
+        width: 110vw;
+        z-index: 100;
+    
+    }
+    
+    
+    .nav{
+        list-style: none;
+        display: flex;
+         margin-top: 0;
+        gap: 10%;
+        justify-content: center;
+        background-color: wheat;
+        padding: 0.7%;
+    
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1em;
+        }
+        a hover{
+            color: grey;
+        }
+    }
+    
+    .groupBlogs{
+         position: absolute;
+        display: none;
+    }
+    
+    .personalBlogs:hover .groupBlogs{
+         display: block;
+    }
+    
+    .groupNav{
+        list-style: none;
+        width: 10vw;
+        background-color: white;
+        border-radius: 1em;
+        padding: 5%;
+        line-height: 40px;
+        box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+    
+    }
+    
+
+
+    .hero{
+        /* background:linear-gradient(rgba(17, 16, 16, 0.5), rgba(0, 0, 0, 0.5)),  url(https://img.freepik.com/free-psd/reading-room-old-library-house-generative-ai_587448-1963.jpg?uid=R191993380&ga=GA1.1.360860165.1740996244&semt=ais_hybrid&w=740); */
+        background-color: maroon;
+        height: 70vh;
+        color: white;
+        justify-content: center;
+        margin: -5%;
+    
+    }
+    
+    .heroContent{
+      width: 90%;
+      position: relative;
+      left: 5%;
+      top: 20%;
+      
+       h1{
+        font-size: 4em;
+        text-align: center;
+       }
+       p{
+        font-size: 2em;
+        font-style:italic ;
+    
+       }
+    
+      
+    }
+    
+  
+    .bodySection{
+    width: 98vw;
+    background-color: aliceblue;
+    position: absolute;
+    top: 40%;
+    height: 130vh;
+    left: 3%;
+    padding-top: 4%;
+    border-radius: 2%;
+    
+    box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+    }
+    .BooKReviewCatalogue{
+        display: flex;
+        gap: 4%;
+        justify-self: center;
+         padding-top: 3%;
+         box-shadow: inset 4px 4px 10px  #ccc, inset -4px -4px 10px #fff;
+        width: 90vw;
+        padding: 2%;
+    
+    }
+    #becomingBook{
+        width: 24vw;
+    }
+    #becomingBook:hover, #homegoingBook:hover,#bornACrimeBook:hover{
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0,0,0.2);
+        z-index: 1;
+    }
+    
+    #homegoingBook:hover{
+        background-color: white;
+    }
+    
+    .upcomingReviews{
+        display: inline-block;
+    }
+    
+    #homegoing{
+        display: block;
+        transition: all 0.3s ease;
+    
+    }
+    .overlay-text{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 22%;
+        left: 71%;
+        color: white;
+        font-size: 1.6em;
+        font-weight: bold;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 4;
+    }
+    
+  
+    
+    
+    
+    
+    
+    .bookCatalogue{
+       
+        h1{
+            font-size: 2em;
+            text-align: center;
+            padding: 1%;
+            
+        }
+    }
+    
+    .bookTitle{
+        
+        color: black;
+        background-color: wheat;
+       
+      
+        border-image-slice: 1;
+         margin-left: 3%;
+         height: 25vh;
+         width: 10vw;
+    
+    }
+    
+    
+    
+    .eventCatalogue{
+       
+        position: relative;
+        h1{
+            font-size: 2em;
+            text-align: center;
+            padding: 1%;
+            
+        }
+    }
+    
+    .events{
+        display: flex;
+        gap: 4%;
+       justify-self: center;
+        box-shadow: inset 4px 4px 10px  #ccc, inset -4px -4px 10px #fff;
+       padding: 2%;
+       width: 90vw;
+    }
+
+
+
+
+.form{
+
+width: 80vw;
+
+}
+
+
+
+.footer{
+   
+    top: 180vh;
+    width: 70vw;
+  
+
+.footerSections{
+    display: flex;
+    gap: 20%;
+}
+
+.footerNavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav{
+    list-style: none;
+    display: flex;
+    gap: 25%;
+    margin-top: 1%;
+    position: relative;
+    left: 0%;
+
+  li  a{
+        text-decoration: none;
+        color: grey;
+    }
+
+ li a:hover{
+    color: black;
+ }
+}
+    
+    
+}
+
+}
+
+
+
+@media only screen and (max-width:1200px) and (min-width:801px){
+
+    .nav{
+      
+    
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5em;
+        }
+        a hover{
+            color: grey;
+        }
+    }
+
+
+
+.navBar{
+
+    position: fixed;
+    top: 0%;
+    width: 110vw;
+    z-index: 100;
+
+}
+
+
+
+
+.heroContent{
+    width: 80%;
+    position: relative;
+    left: 5%;
+    top: 40%;
+    
+     h1{
+      font-size: 4em;
+      text-align: center;
+     }
+     p{
+      font-size: 2em;
+      font-style:italic ;
+  
+     }
+  
+    
+  }
+  
+  .hero{
+    background-color: maroon;
+    height: 50vh;
+  
+
+}
+
+
+
+.bodySection{
+    width: 97vw;
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    height: 130vh;
+    left: 0%;
+    padding-top: 4%;
+    border-radius: 2%;
+    
+    box-shadow: none;
+    }
+    .BooKReviewCatalogue{
+        display: flex;
+        gap: 4%;
+        justify-self: center;
+         padding-top: 3%;
+         box-shadow: inset 4px 4px 10px  #ccc, inset -4px -4px 10px #fff;
+        width: 60vw;
+        padding: 2%;
+    
+    }
+    #becomingBook{
+        width: 18vw;
+    }
+    #becomingBook:hover, #homegoingBook:hover,#bornACrimeBook:hover{
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0,0,0.2);
+        z-index: 1;
+    }
+    
+    #homegoingBook:hover{
+        background-color: white;
+    }
+    
+    .upcomingReviews{
+        display: inline-block;
+    }
+    
+    #homegoing{
+        display: block;
+        transition: all 0.3s ease;
+    
+    }
+    .overlay-text{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 18%;
+        left: 69%;
+        color: white;
+        font-size: 1.6em;
+        font-weight: bold;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 4;
+    }
+    
+    .upcomingReviews:hover #homegoingBook{
+        transform: translate(-5px);
+        z-index: 1;
+    }
+    .upcomingReviews:hover .overlay-text{
+        opacity: 1;
+    }
+    
+    
+    
+    
+    
+    
+    .bookCatalogue{
+       
+        h1{
+            font-size: 2em;
+            text-align: center;
+            padding: 1%;
+            
+        }
+    }
+    
+    .bookTitle{
+        
+        color: black;
+        background-color: wheat;
+       
+      
+        border-image-slice: 1;
+         margin-left: 3%;
+         height: 25vh;
+         width: 10vw;
+    
+    }
+    
+    
+    
+    .eventCatalogue{
+       
+        position: relative;
+        h1{
+            font-size: 2em;
+            text-align: center;
+            padding: 1%;
+            
+        }
+    }
+    
+    .events{
+        display: flex;
+        gap: 4%;
+       justify-self: center;
+        box-shadow: inset 4px 4px 10px  #ccc, inset -4px -4px 10px #fff;
+       padding: 2%;
+       width: 60vw;
+    
+    
+
+}
+
+
+
+
+
+.form{
+
+width: 60vw;
+color: white;
+background-color: rgb(54, 52, 52);
+font-size: 1.3em;
+margin-bottom: 10%;
+}
+
+
+
+.footer{
+    position: absolute;
+    top: 150vh;
+    width: 70vw;
+    justify-self: center;
+    left: 18%;
+    font-size: 1.5em;
+    padding-top: 3%;
+    color: grey;
+
+    p{
+        text-align: center;
+    }
+}
+
+.footerSections{
+    display: flex;
+    gap: 20%;
+}
+
+.footerNavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav{
+    list-style: none;
+    display: flex;
+    gap: 25%;
+    margin-top: 1%;
+    position: relative;
+    left: 0%;
+
+  li  a{
+        text-decoration: none;
+        color: grey;
+    }
+
+ li a:hover{
+    color: black;
+ }
+}
+}
 
