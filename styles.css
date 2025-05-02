@@ -59,7 +59,6 @@ body{
 }
 
 .hero{
-    /* background:linear-gradient(rgba(17, 16, 16, 0.5), rgba(0, 0, 0, 0.5)),  url(https://img.freepik.com/free-psd/reading-room-old-library-house-generative-ai_587448-1963.jpg?uid=R191993380&ga=GA1.1.360860165.1740996244&semt=ais_hybrid&w=740); */
     background-color: maroon;
     height: 70vh;
     color: white;
@@ -548,7 +547,7 @@ margin-bottom: 10%;
     .hero{
         /* background:linear-gradient(rgba(17, 16, 16, 0.5), rgba(0, 0, 0, 0.5)),  url(https://img.freepik.com/free-psd/reading-room-old-library-house-generative-ai_587448-1963.jpg?uid=R191993380&ga=GA1.1.360860165.1740996244&semt=ais_hybrid&w=740); */
         background-color: maroon;
-        height: 70vh;
+        height: 50vh;
         color: white;
         justify-content: center;
         margin: -5%;
@@ -579,13 +578,13 @@ margin-bottom: 10%;
     width: 98vw;
     background-color: aliceblue;
     position: absolute;
-    top: 40%;
+    top: 55%;
     height: 130vh;
     left: 3%;
     padding-top: 4%;
     border-radius: 2%;
     
-    box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+    box-shadow: none;
     }
     .BooKReviewCatalogue{
         display: flex;
@@ -678,7 +677,7 @@ margin-bottom: 10%;
     
     .events{
         display: flex;
-        gap: 4%;
+        gap: 80%;
        justify-self: center;
         box-shadow: inset 4px 4px 10px  #ccc, inset -4px -4px 10px #fff;
        padding: 2%;

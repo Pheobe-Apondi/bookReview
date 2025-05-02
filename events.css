@@ -1,0 +1,178 @@
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: maroon;
+
+
+}
+
+.personalBlogs{
+    position: relative;
+    display: inline-block;
+}
+
+.navBar{
+
+    position: fixed;
+    top: -1%;
+    width: 110vw;
+    z-index: 100;
+
+}
+
+.heroConten{
+   border: solid 2px white;
+   width: 500px;
+}
+
+#becomingEvent{
+    z-index: 100;
+    width: 25vw;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+
+
+}
+
+#homegoingEvent{
+    z-index: 100;
+    width: 25vw;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+
+
+}
+
+.becomingImage{
+    display: flex;
+    gap: 10%;
+    padding: 2%;
+    box-shadow: inset 4px 4px 10px  #aa2323, inset -4px -4px 10px #fff;
+    width: 60vw;
+   transform: translate(30%)
+;}
+.nav{
+    list-style: none;
+    display: flex;
+     margin-top: 0;
+    gap: 10%;
+    justify-content: center;
+    background-color: wheat;
+    padding: 0.7%;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a hover{
+        color: grey;
+    }
+}
+
+.groupBlogs{
+     position: absolute;
+    display: none;
+}
+
+.personalBlogs:hover .groupBlogs{
+     display: block;
+}
+
+.groupNav{
+    list-style: none;
+    width: 10vw;
+    background-color: white;
+    border-radius: 1em;
+    padding: 5%;
+    line-height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+
+}
+
+.heroContent{
+    position: relative;
+    top: 1vw;
+    color: white;
+    font-size: 4em;
+}
+
+
+
+
+#title{
+    text-align: center;
+    z-index: 10;
+
+}
+
+
+
+
+
+
+
+.form{
+    border-radius: 0.7em;
+justify-self: center;
+position: relative;
+transform: translate(0%);
+margin-top: 2%;
+padding: 3%;
+width: 80vw;
+color: black ;
+background-color: wheat;
+font-size: 1.3em;
+margin-bottom: 10%;
+}
+
+#input{
+    padding: 2%;
+    border-radius: 2%;
+    border: none;
+}
+
+
+
+.footer{
+    position: absolute;
+    top: 160vh;
+    width: 98vw;
+    justify-self: center;
+    left: 0%;
+    font-size: 1.5em;
+    padding-top: 3%;
+    color: grey;
+
+    p{
+        text-align: center;
+    }
+}
+
+.footerSections{
+    display: flex;
+    gap: 40%;
+}
+
+.footerNavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav{
+    list-style: none;
+    display: flex;
+    gap: 25%;
+    margin-top: 1%;
+    position: relative;
+    left: 0%;
+
+  li  a{
+        text-decoration: none;
+        color: grey;
+    }
+
+ li a:hover{
+    color: black;
+ }
+}
