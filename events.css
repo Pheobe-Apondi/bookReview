@@ -1,7 +1,6 @@
 body{
     overflow-x: hidden;
-    font-family: sans-serif;
-    background-color: maroon;
+    font-family: sans-serif;    background-color: wheat;
 
 
 }
@@ -57,12 +56,29 @@ body{
      margin-top: 0;
     gap: 10%;
     justify-content: center;
-    background-color: wheat;
+    background-color: maroon;
     padding: 0.7%;
 
     a{
         text-decoration: none;
-        color: black;
+        color: white;
+    }
+    a hover{
+        color: grey;
+    }
+}
+.nav{
+    list-style: none;
+    display: flex;
+     margin-top: 0;
+    gap: 10%;
+    justify-content: center;
+    background-color: maroon;
+    padding: 0.7%;
+
+    a{
+        text-decoration: none;
+        color: white;
     }
     a hover{
         color: grey;
@@ -92,7 +108,7 @@ body{
 .heroContent{
     position: relative;
     top: 1vw;
-    color: white;
+    color: black;
     font-size: 4em;
 }
 
@@ -119,8 +135,8 @@ transform: translate(0%);
 margin-top: 2%;
 padding: 3%;
 width: 80vw;
-color: black ;
-background-color: wheat;
+color: white;
+background-color: maroon;
 font-size: 1.3em;
 margin-bottom: 10%;
 }
@@ -175,4 +191,187 @@ margin-bottom: 10%;
  li a:hover{
     color: black;
  }
+}
+
+@media only screen and (max-width:600px) and (min-width:0px){
+    .becomingImage{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        padding: 8%;
+        transform: translate(3%)
+
+
+    } 
+
+    #becomingEvent{
+        z-index: 100;
+        width: 85vw;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+    
+    
+    }
+    
+    #homegoingEvent{
+        width: 85vw;
+        margin-top: 25%;
+       
+    
+    }
+
+
+
+.form{
+
+    transform: translate(0%);
+margin-top: 18%;
+width: 85vw;
+margin-left: 2%;
+font-size: 1em;
+}
+
+#input{
+    padding: 2%;
+    border-radius: 2%;
+    border: none;
+}
+
+
+
+.footer{
+ display: none;
+}
+
+
+
+.nav{
+    list-style: none;
+    display: flex;
+     margin-top: 0;
+    gap: 2.4%;
+    justify-content: center;
+    background-color: maroon;
+    padding: 0.7%;
+    margin-left: -10%;
+
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        padding: 0%;
+
+    }
+    a hover{
+        color: grey;
+    }
+} 
+
+
+
+.navBar{
+
+    position: fixed;
+    top: 0%;
+    width: 122vw;
+    z-index: 100;
+
+}
+
+#title{
+    text-align: center;
+    z-index: 10;
+    font-size: 1em;
+
+}
+
+
+} 
+
+@media only screen and (max-width:1000px) and (min-width:600px){
+
+
+    
+    .becomingImage{
+        display: flex;
+        gap: 10%;
+        padding: 2%;
+        box-shadow: inset 4px 4px 10px  #aa2323, inset -4px -4px 10px #fff;
+        width: 60vw;
+       transform: translate(30%)
+    ;}
+
+
+.nav{
+    list-style: none;
+    display: flex;
+     margin-top: 2%;
+ 
+}
+
+
+#title{
+  
+    font-size: 1em;
+
+}
+
+
+.form{
+
+    transform: translate(0%);
+margin-top: 18%;
+width: 85vw;
+margin-left: 2%;
+font-size: 1em;
+}
+
+#input{
+    padding: 2%;
+    border-radius: 2%;
+    border: none;
+}
+
+
+
+
+.footer{
+    position: absolute;
+    top: 100vh;
+    width: 98vw;
+   
+
+    p{
+        text-align: center;
+    }
+}
+
+
+.footerNavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav{
+    list-style: none;
+    display: flex;
+    gap: 20%;
+    margin-top: 1%;
+
+  li  a{
+        text-decoration: none;
+        color: grey;
+    }
+
+ li a:hover{
+    color: black;
+ }
+}
+
+.footerSections{
+    display: flex;
+    gap: 25%;
+}
 }
